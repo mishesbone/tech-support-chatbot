@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support Chatbot</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Include any other necessary meta tags, links, or scripts -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Support Chatbot</h1>
+            <p>Get support for cloud and on-premises technologies</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            {% block content %}
+            <!-- The content block will be overridden in specific pages (e.g., index.html) -->
+            {% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tech Support Chatbot. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to your JS file -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
